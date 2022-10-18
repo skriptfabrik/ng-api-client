@@ -1,0 +1,4 @@
+# Misc
+.openapi-generator
+dist
+node_modules
