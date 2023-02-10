@@ -1,0 +1,43 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+
+env:
+  NODE_VERSION: 16.16
+
+jobs:
+  publish:
+    name: Publish package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js version ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: |-
+          npm ci
+
+      - name: Build package
+        run: |-
+          npm run build
+
+      - name: Publish package
+        uses: JS-DevTools/npm-publish@v1
+        if: github.ref_type == 'tag'
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package: ./dist/package.json
+          access: public
