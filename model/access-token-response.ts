@@ -9,10 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { ClockifyHookUpdateRequestData } from './clockify-hook-update-request-data';
 
 
-export interface ClockifyHookUpdateRequest { 
-    data: ClockifyHookUpdateRequestData;
+export interface AccessTokenResponse { 
+    token: string;
 }
 
