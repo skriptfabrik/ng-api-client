@@ -4,7 +4,7 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     reviewers:
-      - 'skriptfabrik/developers'
+      - 'skriptfabrik/api-client-maintainers'
     schedule:
       interval: 'weekly'
       time: '08:00'
@@ -15,7 +15,7 @@ updates:
     ignore:
       - dependency-name: '@types/*'
     reviewers:
-      - 'skriptfabrik/developers'
+      - 'skriptfabrik/api-client-maintainers'
     schedule:
       interval: 'weekly'
       time: '08:00'

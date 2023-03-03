@@ -1,6 +1,6 @@
 {
   "name": "@skriptfabrik/ng-api-client",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "skriptfabrik API Client for Angular",
   "author": "skriptfabrik",
   "repository": {
@@ -16,19 +16,18 @@
     "build": "ng-packagr -p ng-package.json"
   },
   "peerDependencies": {
-    "@angular/core": "^15.0.3",
-    "rxjs": "^7.5.5"
+    "@angular/core": "^15.2.0",
+    "rxjs": "~7.8.0"
   },
   "devDependencies": {
-    "@angular/common": "^15.0.3",
-    "@angular/compiler": "^15.0.3",
-    "@angular/compiler-cli": "^15.0.3",
-    "@angular/core": "^15.0.3",
-    "@angular/platform-browser": "^15.0.3",
-    "ng-packagr": "^15.0.2",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "^7.5.5",
-    "typescript": ">=4.8.2 <4.10.0",
-    "zone.js": "^0.11.5"
+    "@angular/common": "^15.2.0",
+    "@angular/compiler": "^15.2.0",
+    "@angular/compiler-cli": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@angular/platform-browser": "^15.2.0",
+    "ng-packagr": "^15.2.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "~4.9.4",
+    "zone.js": "~0.12.0"
   }
 }
